@@ -19,6 +19,7 @@ gem 'webpacker'
 
 gem 'remotipart'
 gem 'rails_admin', '~> 1.3'
+gem 'pundit'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

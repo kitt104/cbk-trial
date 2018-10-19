@@ -24,5 +24,12 @@ class ProductPolicy < ApplicationPolicy
   def destroy?
     user.admin?
   end
-
+  def rails_admin?(action)
+    case action
+      when :destroy, :new
+        false
+      else
+        super
+    end
+  end
 end

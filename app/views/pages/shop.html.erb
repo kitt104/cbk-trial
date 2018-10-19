@@ -1,2 +1,10 @@
 <h1>Pages#shop</h1>
 <p>Shop</p>
+<%= link_to 'Club', :club %>
+<%= link_to 'Shop', :shop %>
+<%= link_to 'Tuition', :tuition %>
+<%= link_to 'Home', :root %>
+<%= link_to 'Member Area', :members %>
+<% if current_user !=nil && current_user.admin? %>
+  <%= link_to 'Admin', :rails_admin %>
+<% end %>

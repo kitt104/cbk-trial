@@ -21,6 +21,10 @@ gem 'remotipart'
 gem 'rails_admin', '~> 1.3'
 gem 'pundit'
 gem "rails_admin_pundit", :github => "sudosu/rails_admin_pundit"
+gem 'spree', '~> 3.6'
+gem 'spree_auth_devise', '~> 3.3'
+gem 'spree_gateway', '~> 3.3'
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'

@@ -19,3 +19,6 @@ Product.create!(sku: 'cabrinha-switchblade-2018-kite', name: 'Cabrinha Switchbla
 Product.create!(sku: 'fone-bandit-11-2018-kite', name: 'F-One Bandit 11 2018 Kite', category: freestyle, photo_url: 'https://pbs.twimg.com/media/B_AUcKeU4AE6ZcG.jpg:large')
 Product.create!(sku: 'slingshot-wave-sst-2018-kite',   name: 'Slingshot Wave SST 2017 Kite',      category: freestyle, photo_url: 'https://cdn-ak.f.st-hatena.com/images/fotolife/s/suzumidokoro/20160413/20160413220730.jpg')
 puts 'Finished!'
+
+Spree::Core::Engine.load_seed if defined?(Spree::Core)
+Spree::Auth::Engine.load_seed if defined?(Spree::Auth)
